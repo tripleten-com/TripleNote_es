@@ -1,0 +1,138 @@
+[
+{
+    "model": "notes.note",
+    "pk": 1,
+    "fields": {
+        "title": "Introduction to Programming",
+        "text": "This is a note about the basics of programming.",
+        "slug": "vvedenie-v-programmirovanie",
+        "author": 1
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 2,
+    "fields": {
+        "title": "Fundamentals of Algorithms",
+        "text": "Basic algorithmic concepts are discussed here.",
+        "slug": "osnovy-algoritmov",
+        "author": 2
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 3,
+    "fields": {
+        "title": "Studying the Python language",
+        "text": "This note is dedicated to studying Python.",
+        "slug": "izuchenie-yazyka-python",
+        "author": 1
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 4,
+    "fields": {
+        "title": "Web application development",
+        "text": "This note discusses the development of web applications.",
+        "slug": "razrabotka-veb-prilozheniy",
+        "author": 2
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 5,
+    "fields": {
+        "title": "Databases and SQL",
+        "text": "Note about databases and the SQL language.",
+        "slug": "bazy-dannykh-i-sql",
+        "author": 1
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 6,
+    "fields": {
+        "title": "Machine learning algorithms",
+        "text": "This note is about various machine learning algorithms.",
+        "slug": "algoritmy-mashinnogo-obucheniya",
+        "author": 2
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 7,
+    "fields": {
+        "title": "The Fundamentals of Network Technologies",
+        "text": "Let's consider the basics of network technologies.",
+        "slug": "osnovy-setevykh-tekhnologiy",
+        "author": 1
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 8,
+    "fields": {
+        "title": "Mobile Application Development",
+        "text": "Note about the development of mobile applications for iOS and Android.",
+        "slug": "razrabotka-mobilnykh-prilozheniy",
+        "author": 2
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 9,
+    "fields": {
+        "title": "The Basics of Web Development",
+        "text": "This note discusses the basic concepts of web development.",
+        "slug": "osnovy-veb-razrabotki",
+        "author": 1
+    }
+},
+{
+    "model": "notes.note",
+    "pk": 10,
+    "fields": {
+        "title": "Software testing",
+        "text": "Note about the methods and tools of software testing.",
+        "slug": "testirovanie-programmnogo-obespecheniya",
+        "author": 2
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$A1pFve9WrVH3yLwjX39CMQ$Fvdwc8knYM1PfSrvO+WTJrZKhY/0Vky96G5thYVcGvM=",
+        "last_login": "2023-06-20T17:01:27.093Z",
+        "is_superuser": true,
+        "username": "author",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T16:32:17.275Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$60ply4TG91uG5XwJQll9oY$76Jd5Y4h/PYKieA04bfb+qUsHojzl7P0TLIrhFg+Yw8=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "reader",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-06-20T16:32:37.297Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

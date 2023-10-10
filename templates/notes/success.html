@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Successful</h2>
+  <ul>
+    <li>
+      <a href="{% url 'notes:home' %}">Back to main page</a>
+    </li>
+    <li>
+      <a href="{% url 'notes:list' %}">To the list of notes</a>
+    </li>
+  </ul>
+{% endblock content %}
