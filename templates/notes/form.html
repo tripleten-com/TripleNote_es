@@ -2,11 +2,11 @@
 {% block content %}
   <h2>
     {% if request.path == '/add/' %}
-      Add
+      Agregar
     {% else %}
-      Edit
+      Editar
     {% endif %}
-    note
+    nota
   </h2>
   <form class="form-horizontal" method="post">
     {% csrf_token %}
@@ -26,7 +26,7 @@
       {% endfor %}
     </fieldset>
     <div class="form-actions">
-      <button type="submit" class="btn btn-primary" >Save</button>
+      <button type="submit" class="btn btn-primary" >Guárdala</button>
     </div>
   </form>
 {% endblock %}
