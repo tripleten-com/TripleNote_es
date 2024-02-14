@@ -1,26 +1,26 @@
 # triple_note
 
-## Description
-TripleNote, an electronic notebook for those who don't want to forget anything by writing everything down.
+## Descripción
+TripleNote, un cuaderno electrónico para quienes no quieren olvidarse de nada anotándolo todo.
 
-Pay attention to the peculiarities of the project. If the slug field is not filled out in the form when creating a note, then the transliterated title of the note will be set as the page address; in addition, the slug field should be unique.
+Presta atención a las peculiaridades del proyecto: si el campo slug no se rellena en el formulario al crear una nota, el título transliterado de la nota se establecerá como la dirección de la página; además, el campo slug debe ser único.
 
-To load prepared news after applying migrations, execute this command:
+Para cargar notas preparadas después de aplicar las migraciones, ejecuta este comando:
 ```bash
 python manage.py loaddata db.json
 ```
-After this, two users will be available in the project: `author` and `reader`.
-The passwords match the login.
+Después de esto, estarán disponibles en el proyecto dos usuarios, `author` y `reader`.
+Las contraseñas coinciden con el login.
 
 
-## How to work with a repository
-To start the task, you need to copy the repository URL and clone it to your computer.  
+## Cómo trabajar con un repositorio
+Para empezar la tarea, necesitas copiar la URL del repositorio y clonarlo en tu computadora.
 
   
-### Create a virtual environment
+### Creación de un entorno virtual
 
-1. Launch the Visual Studio Code editor and through the "*File"  / "Open Directory"* menu, open the *Dev/triple_note/* folder.
-2. Launch the terminal in VS Code, make sure you are working from the directory *triple_note/* (if you are working on Windows, make sure that Git Bash is running in the terminal, not PowerShell or anything else), and execute the command:
+1. Inicia el editor de código de Visual Studio y, a través del menú *"Archivo" / "Abrir directorio"*, abre la carpeta *Dev/triple_note/*.
+2. Inicia la terminal en VS Code, asegúrate de trabajar desde el directorio `triple_note/` (si estás trabajando en Windows, asegúrate de que Git Bash se esté ejecutando en la terminal, ni PowerShell ni nada más), y ejecuta el comando:
 - Linux/macOS
     
     ```bash
@@ -33,11 +33,11 @@ To start the task, you need to copy the repository URL and clone it to your comp
     python -m venv venv
     ```
    
-The virtual environment will be deployed in the *triple_note/* directory and a `venv` folder will appear, which will store all project dependencies.
+El entorno virtual se desplegará en el directorio *triple_note/* y aparecerá una carpeta `venv`, que almacenará todas las dependencias del proyecto.
 
 
-### Activation of the virtual environment
-In the terminal, navigate to the root directory of the project *Dev/triple_note/* and execute this command:
+### Activación del entorno virtual
+En la terminal, navega hasta el directorio raíz del proyecto *Dev/triple_note/* y ejecuta este comando:
 - Linux/macOS
     
     ```bash
@@ -51,39 +51,39 @@ In the terminal, navigate to the root directory of the project *Dev/triple_note/
     ```
     
 
-Now all commands in the terminal will be preceded by the string `(venv)`.
+Ahora todos los comandos en la terminal irán precedidos por el string `(venv)`.
 
-💡 All the following console commands must be run with the working virtual environment.
+💡 Todos los comandos siguientes deben ejecutarse con el entorno virtual de trabajo.
 
-Refresh pip:
+Actualiza pip:
 
 ```bash
 python -m pip install --upgrade pip
 ```
 
-### Installing dependencies from the *requirements.txt*:
-While in the *Dev/triple_note/* folder, execute this command:
+### Instalar las dependencias del archivo *requirements.txt*:
+Mientras estás en la carpeta *Dev/triple_note/*, ejecuta este comando:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Application of migrations
+### Aplicación de migraciones
 
     
-In the directory with the manage.py file, run this command: 
+En el directorio con el archivo "manage.py", ejecuta el siguiente comando:
 
 ```bash
 python manage.py migrate
 ```
 
-### Launching the project in dev mode
+### Ejecutar el proyecto en modo dev
 
     
-In the directory with the manage.py file, run this command:
+En el directorio con el archivo "manage.py", ejecuta el siguiente comando:
 
 ```bash
 python manage.py runserver
 ```
 
-In response, Django will report that the server is running and the project is available at [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
+En respuesta, Django indicará que el servidor está funcionando y que el proyecto está disponible en [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
