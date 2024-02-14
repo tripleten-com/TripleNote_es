@@ -5,18 +5,18 @@ from django.core.exceptions import ValidationError
 
 from .models import Note
 
-WARNING = ' - such a slug already exists; come up with a unique value!'
+WARNING = '- un slug así ya existe, ¡crea un valor único!'
 
 
 class NoteForm(forms.ModelForm):
-    """Form for creating or updating a note."""
+    """Formulario para crear o actualizar una nota."""
 
     class Meta:
         model = Note
         fields = ('title', 'text', 'slug')
 
     def clean_slug(self):
-        """Processes the cases where slug is not unique."""
+        """Procesa los casos en los que el slug no es único."""
         cleaned_data = super().clean()
         slug = cleaned_data.get('slug')
         if not slug:
