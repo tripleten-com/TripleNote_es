@@ -13,20 +13,20 @@
       <ul class="nav nav-pills">
         {% if user.is_authenticated %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'notes:list' %}">List of notes</a>
+            <a class="nav-link" href="{% url 'notes:list' %}">Lista de notas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'notes:add' %}">New note</a>
+            <a class="nav-link" href="{% url 'notes:add' %}">Cerrar sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:logout' %}">Log out</a>
+            <a class="nav-link" href="{% url 'users:logout' %}">Cerrar sesión</a>
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:login' %}">Login</a>
+            <a class="nav-link" href="{% url 'users:login' %}">Iniciar sesión</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'users:signup' %}">Sign up</a>
+            <a class="nav-link" href="{% url 'users:signup' %}">Registrarse</a>
           </li>
         {% endif %}
       </ul>
