@@ -6,22 +6,22 @@ from pytils.translit import slugify
 
 class Note(models.Model):
     title = models.CharField(
-        'Title',
+        'Título',
         max_length=100,
-        default='Title of note',
-        help_text='Give a short title to the note'
+        default='Título de la nota',
+        help_text='Dale un título corto a la nota'
     )
     text = models.TextField(
-        'Body',
-        help_text='Add more details'
+        'Cuerpo',
+        help_text='Añade más detalles'
     )
     slug = models.SlugField(
-        'Address for the page with a note',
+        'Dirección de la página con una nota',
         max_length=100,
         unique=True,
         blank=True,
-        help_text=('Indicate the address for the note page. Use only '
-                   'Latin characters, numbers, hyphens and underscores')
+        help_text=('Indica la dirección de la página de la nota. Utiliza solo '
+                   'caracteres latinos, números, guiones y guiones bajos')
     )
     author = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -38,6 +38,6 @@ class Note(models.Model):
 
     @classmethod
     def get_slug_by_title(cls, title):
-        """Creating a slug for a note based on the title."""
+        """Crear un slug para una nota basado en el título."""
         max_slug_length = cls._meta.get_field('slug').max_length
         return slugify(title)[:max_slug_length]
